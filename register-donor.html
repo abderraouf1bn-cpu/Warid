@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register as Donor — Warid</title>
+  <link rel="stylesheet" href="register-donor.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-dot"></span>WARID</a>
+    <ul class="nav-links">
+      <li><a href="index.html">How it works</a></li>
+      <li><a href="register-needy.html">Need blood?</a></li>
+      <li><a href="login.html" class="nav-cta">Log in</a></li>
+    </ul>
+  </nav>
+  <section class="auth">
+    <div class="auth-card">
+      <span class="auth-eyebrow fade-up">For donors</span>
+      <h1 class="auth-title fade-up-2">Become a blood donor</h1>
+      <p class="auth-sub fade-up-3">
+        Fill in your details below. It takes less than 2 minutes and could save up to 3 lives.
+      </p>
+      <form id="donorForm" class="auth-form fade-up-3">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="full name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email <span "></span></label>required>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="0XX XXX XXXX" required>
+          </div>
+          <div class="field">
+            <label for="birthDate">Birth date</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="bloodType">Blood type</label>
+          <select id="bloodType" name="bloodType" required>
+            <option value="" disabled selected>Select your blood type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="enter your password" required>
+          </div>
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="re-enter your password" required>
+          </div>
+        </div>
+        <p class="field-error" id="formError"></p>
+        <button type="submit" class="btn btn-donor btn-full">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Register as donor
+        </button>
+      </form>
+      <p class="auth-footer">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+      <a href="index.html" class="back-home">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to home
+      </a>
+    </div>
+    <div class="auth-side">
+      <img
+        class="auth-img"
+        src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1200&q=80"
+        alt="Doctor holding blood bag in hospital"/>
+      <div class="auth-img-overlay"></div>
+      <div class="auth-img-tag">
+        <span class="tag-num">4.5M</span>
+        <p class="tag-lbl">lives saved per year</p>
+      </div>
+    </div>
+  </section>
+  <script src="register-donor.js"></script>
+</body>
+</html>

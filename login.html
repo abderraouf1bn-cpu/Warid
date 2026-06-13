@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in — Warid</title>
+  <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-dot"></span>WARID
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">How it works</a></li>
+      <li><a href="register-donor.html">Donate</a></li>
+      <li><a href="register-needy.html" class="nav-cta">Need blood?</a></li>
+    </ul>
+  </nav>
+
+  <section class="auth auth-centered">
+    <div class="auth-card">
+      <span class="auth-eyebrow fade-up">Welcome back</span>
+      <h1 class="auth-title fade-up-2">Log in to your account</h1>
+      <p class="auth-sub fade-up-3">
+        Access your donor or patient dashboard and continue saving lives.
+      </p>
+
+      <form id="loginForm" class="auth-form fade-up-3">
+
+        <div class="field">
+          <label for="identifier">Email or phone number</label>
+          <input type="text" id="identifier" name="identifier" placeholder="you@example.com or 0XX XXX XXXX" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="enter your password" required>
+        </div>
+
+        <div class="login-options">
+          <label class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            Remember me
+          </label>
+          <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <p class="field-error" id="formError"></p>
+
+        <button type="submit" class="btn btn-donor btn-full">
+          Log in
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </form>
+
+      <p class="auth-footer">
+        Don't have an account? <a href="register-donor.html">Register as donor</a> or <a href="register-needy.html">register as needy</a>
+      </p>
+
+      <a href="index.html" class="back-home">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to home
+      </a>
+    </div>
+  </section>
+  <script src="login.js"></script>
+</body>
+</html>

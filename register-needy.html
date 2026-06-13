@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register as Needy — Warid</title>
+  <link rel="stylesheet" href="register-needy.css"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-dot"></span>
+      WARID
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#how">How it works</a></li>
+      <li><a href="register-donor.html">Donate</a></li>
+      <li><a href="login.html" class="nav-cta">Log in</a></li>
+    </ul>
+  </nav>
+  <section class="auth">
+    <div class="auth-side">
+      <img
+        class="auth-img"
+        src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1200&q=80"
+        alt="Patient in hospital needing blood"
+      />
+      <div class="auth-img-overlay"></div>
+      <div class="auth-img-tag">
+        <span class="tag-num">2s</span>
+        <p class="tag-lbl">someone needs blood every 2 seconds</p>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <span class="auth-eyebrow fade-up">For patients</span>
+      <h1 class="auth-title fade-up-2">Request blood</h1>
+      <p class="auth-sub fade-up-3">
+        Tell us what you need and where. We'll match you with a compatible donor as fast as possible.
+      </p>
+
+      <form id="needyForm" class="auth-form fade-up-3">
+
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="0XX XXX XXXX" required>
+        </div>
+
+        <div class="field">
+          <label for="position">Location</label>
+          <input type="text" id="position" name="position" placeholder="exemple:mustapha bacha hospital - alger" required>
+        </div>
+
+        <div class="field">
+          <label for="bloodType">Blood type needed</label>
+          <select id="bloodType" name="bloodType" required>
+            <option value="" disabled selected>Select blood type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Urgency level</label>
+          <div class="urgency-options">
+            <label class="urgency-option" for="urgent">
+              <input type="radio" id="urgent" name="urgency" value="urgent" required>
+              <span class="urgency-card urgency-urgent">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Urgent
+              </span>
+            </label>
+            <label class="urgency-option" for="normal">
+              <input type="radio" id="normal" name="urgency" value="normal" required>
+              <span class="urgency-card urgency-normal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Normal
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <p class="field-error" id="formError"></p>
+
+        <button type="submit" class="btn btn-needy-submit btn-full">
+          Submit request
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </form>
+
+      <p class="auth-footer">
+        Want to help instead? <a href="register-donor.html">Register as a donor</a>
+      </p>
+
+      <a href="index.html" class="back-home">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to home
+      </a>
+    </div>
+  </section>
+  <script src="register-needy.js"></script>
+</body>
+</html>

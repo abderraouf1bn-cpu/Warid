@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSCC-Olympics</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="config.js"></script>
-  <script src="main.js"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WARID — Give Blood. Save Lives.</title>
+  <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
-  <h1>CSCC Olympics Team 4 !</h1>
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-dot"></span>WARID
+    </a>
+  </nav>
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow fade-up">Save a life today</p>
+      <h1 class="hero-title fade-up-2">
+        A single drop<br>of blood<br><em>saves a life.</em>
+      </h1>
+      <p class="hero-sub fade-up-3">
+        Every 2 seconds someone in the world needs blood. Be the reason someone's story continues. Register as a donor or find help right now.
+      </p>
+      <div class="hero-btns fade-up-3">
+        <a href="register-donor.html" class="btn btn-donor">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Register as donor
+        </a>
+        <a href="register-needy.html" class="btn btn-needy">
+          Register as needy
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img
+        class="hero-img"
+        src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1200&q=80"
+        alt="Doctor holding blood bag in hospital"
+      />
+      <div class="hero-img-overlay"></div>
+      <div class="hero-img-tag">
+        <span class="tag-num">4.5M</span>
+        <p class="tag-lbl">lives saved per year</p>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span class="ticker-item">Give blood <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Save lives <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Every drop counts <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Be a hero today <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Blood donation saves lives <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Register now <span class="ticker-dot"></span></span>
+    </div>
+  </div>
+  <section class="split">
+    <article class="split-card">
+      <img
+        class="split-card-img"
+        src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=900&q=80"
+        alt="Blood donor giving blood"
+      />
+      <div class="split-card-overlay"></div>
+      <div class="split-card-body">
+        <span class="split-card-badge badge-donor">For donors</span>
+        <h2 class="split-card-title">Become a<br>blood donor</h2>
+        <p class="split-card-desc">One donation can save up to 3 lives. It takes 30 minutes and costs you nothing — but means everything to someone else.</p>
+        <a href="register-donor.html" class="split-card-link">
+          Register now
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+    <div class="split-divider"></div>
+    <article class="split-card">
+      <img
+        class="split-card-img"
+        src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=900&q=80"
+        alt="Patient in hospital needing blood"
+      />
+      <div class="split-card-overlay"></div>
+      <div class="split-card-body">
+        <span class="split-card-badge badge-needy">For patients</span>
+        <h2 class="split-card-title">Need blood<br>urgently?</h2>
+        <p class="split-card-desc">Submit your request and we'll match you with a compatible donor in your area as fast as possible.</p>
+        <a href="register-needy.html" class="split-card-link">
+          Request blood
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+  </section>
+  <div class="stats-bar" role="region" aria-label="Statistics">
+    <div class="stat-item">
+      <span class="stat-num">4.5M</span>
+      <p class="stat-label">lives saved<br>every year</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">1 in 7</span>
+      <p class="stat-label">hospital patients<br>need blood</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">2s</span>
+      <p class="stat-label">someone needs<br>blood every 2 seconds</p>
+    </div>
+  </div>
+  <section class="how" id="how">
+    <p class="section-label">How it works</p>
+    <h2 class="how-title">Simple steps.<br>Life-changing impact.</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Register online</h3>
+        <p class="step-desc">Fill in your details — blood type, location, and availability. Takes less than 2 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Get matched</h3>
+        <p class="step-desc">Our system connects donors with patients nearby based on blood type and urgency level.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Save a life</h3>
+        <p class="step-desc">You'll be notified when someone near you needs your blood type. One call, one donation, one life saved.</p>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
 </body>
 </html>
