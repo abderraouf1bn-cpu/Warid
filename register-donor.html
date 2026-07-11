@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register as Donor — Warid</title>
+  <title>Register as Hospita</title>
   <link rel="stylesheet" href="register-donor.css">
 </head>
 <body>
@@ -18,10 +18,10 @@
   </nav>
   <section class="auth">
     <div class="auth-card">
-      <span class="auth-eyebrow fade-up">For donors</span>
-      <h1 class="auth-title fade-up-2">Become a blood donor</h1>
+      <span class="auth-eyebrow fade-up">For hospitals</span>
+      <h1 class="auth-title fade-up-2">Become a inovated hospital</h1>
       <p class="auth-sub fade-up-3">
-        Fill in your details below. It takes less than 2 minutes and could save up to 3 lives.
+        Fill in your details below. It takes less than 2 minutes.
       </p>
       <form id="donorForm" class="auth-form fade-up-3">
         <div class="field">
@@ -29,7 +29,7 @@
           <input type="text" id="fullName" name="fullName" placeholder="full name" required>
         </div>
         <div class="field">
-          <label for="email">Email <span "></span></label>required>
+          <label for="email">Email </label>
           <input type="email" id="email" name="email" placeholder="you@example.com">
         </div>
         <div class="row">
@@ -38,23 +38,12 @@
             <input type="tel" id="phone" name="phone" placeholder="0XX XXX XXXX" required>
           </div>
           <div class="field">
-            <label for="birthDate">Birth date</label>
-            <input type="date" id="birthDate" name="birthDate" required>
+            <label for="birthDate"></label>
           </div>
         </div>
         <div class="field">
-          <label for="bloodType">Blood type</label>
-          <select id="bloodType" name="bloodType" required>
-            <option value="" disabled selected>Select your blood type</option>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-          </select>
+          <label for="bloodType"></label>
+          
         </div>
         <div class="row">
           <div class="field">
@@ -69,7 +58,7 @@
         <p class="field-error" id="formError"></p>
         <button type="submit" class="btn btn-donor btn-full">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Register as donor
+          Register as hospital
         </button>
       </form>
       <p class="auth-footer">
@@ -81,7 +70,7 @@
       </a>
     </div>
     <div class="auth-side">
-      <img
+        <img
         class="auth-img"
         src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1200&q=80"
         alt="Doctor holding blood bag in hospital"/>

@@ -186,8 +186,7 @@ select {
   transition: all var(--transition);
   width: 100%;
 }
-input::placeholder {
-  color: var(--ink-soft);
+input::placeholder {color: var(--ink-soft);
 }
 input:focus,
 select:focus {
@@ -362,8 +361,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: var(--white);
   padding: 14px 28px;
   border-radius: 50px;
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 700;font-size: 0.9rem;
   box-shadow: 0 10px 30px rgba(229,62,62,0.35);
   transition: transform var(--transition);
   z-index: 2000;

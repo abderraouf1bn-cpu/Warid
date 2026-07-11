@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       formError.textContent = '';
     
       showToast(`Verification code sent to ${value}`);
-
-      // Cooldown to avoid spamming
       let seconds = 30;
       sendCodeBtn.disabled = true;
       sendCodeBtn.textContent = `Resend (${seconds}s)`;
